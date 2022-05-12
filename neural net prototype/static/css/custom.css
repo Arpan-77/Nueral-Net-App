@@ -1,0 +1,60 @@
+
+body{font-family: sans-serif!important;}
+.slide{height:80vh;background: rgba(0, 0, 0, 0.692);background-size: cover!important;background-position: center!important;}
+.slide-1{background-image:url(../assets/wp6690977.png);background-size: cover;}
+.slide-2{background-image:url(../assets/wp6690977.png);background-size: cover;}
+.slide-3{background-image:url(../assets/wp6690977.png);background-size: cover;}
+.navbar-dark{background: rgba(22, 22, 22, 0.76);}
+
+.navlinks{
+  letter-spacing: 2px;
+  text-transform:uppercase;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s !important;;
+}
+.navlinks::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  background-color: rgba(255,255,255,.7);
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  transition: all .2s cubic-bezier(.4,0,.2,1);
+}
+.navlinks:hover::after{
+  -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+  -moz-transition: all .2s cubic-bezier(.4,0,.2,1);
+  -ms-transition: all .2s cubic-bezier(.4,0,.2,1);
+  -o-transition: all .2s cubic-bezier(.4,0,.2,1);
+}
+
+.navlinks:hover::after {
+  width: 10px;
+  left: 50%;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  transition: all .2s cubic-bezier(.4,0,.2,1);
+}
+
+.nav{
+  margin-left: auto; 
+ }
+@media only screen and (max-width: 768px) {
+  .nav{
+    flex-direction: column;
+    display: block;
+    width: max-content;
+    margin-left: none!important; 
+   }
+   .nav>li{
+     margin-left: auto
+    }
+    .slide{height:50vh;background: rgba(0, 0, 0, 0.692);background-size: cover!important;background-position: center!important;}
+
+}

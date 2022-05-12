@@ -1,0 +1,28 @@
+Coronavirus Cases: 38,903,731
+Deaths: 488,911
+Recovered: 36,301,482
+
+
+we will facilitate corona test using web app and machine learning based of corona symptoms
+
+features : symptoms
+labels : 0%-100% (of getting corona)
+
+we will treat the people who have high percentage
+
+features :
+average fever - continuous
+body pain - binary (0/1) (yes-0,no-1)
+age - discrete
+runny nose -binary(0/1)
+difficulty breathing - categorial(-1/0/1)
+
+
+technologies used : 
+scikit-learn 
+tensaflow
+jupyter notebook
+
+
+process:
+we will make a form which will ask these basic questions
